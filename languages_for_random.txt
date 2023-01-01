@@ -7,3 +7,5 @@ c
 c++
 bash
 haskell
+lua
+nim
