@@ -4,6 +4,12 @@ use std::convert::TryInto;
 use std::io::{self, BufRead};
 use std::collections::HashSet;
 
+struct Map {
+    grid: Vec<Vec<u8>>,
+    start_point: (usize, usize),
+    end_pint: (usize, usize),
+}
+
 
 fn get_common_items(first_half: Vec<char>, second_half: Vec<char>) -> Vec<char>{
     let a :HashSet<char>= HashSet::from_iter(first_half);

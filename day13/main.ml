@@ -101,19 +101,20 @@ let part_two () =
     in
     let rec calculate_thing pos result = function
         | [] -> result
-        | hd :: tl -> let new_result = 
-            if hd == divider_1 || hd == divider_2 then
-                result + pos
-            else 
-                result
-        in
-        calculate_thing pos new_result tl
+        | hd :: tl -> 
+            let new_result = 
+                if hd = divider_1 || hd = divider_2 then
+                    result * pos
+                else 
+                    result
+            in
+            calculate_thing (pos + 1) new_result tl
 
     in
 
     read_all_lines ()
     |> List.sort (fun a b -> match cmp a b with | Some true -> -1 | _ -> 1)  
-    |> calculate_thing 0 1
+    |> calculate_thing 1 1
 
 
 

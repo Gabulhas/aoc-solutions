@@ -1,11 +1,9 @@
-go
-ocaml
-rust
-python
-elixir
 c
 c++
-bash
+elixir
+go
 haskell
 lua
-nim
+ocaml
+python
+rust
