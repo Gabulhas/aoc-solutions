@@ -7,3 +7,5 @@ lua
 ocaml
 python
 rust
+solidity
+zig
