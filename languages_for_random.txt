@@ -1,8 +1,10 @@
 c
 c++
-elixir
+erlang/elixir
 go
 haskell
+javascript/typescript
+julia
 lua
 ocaml
 python
